@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(236, 236, 236);
+}
+.container {
+  width: 360px;
+  height: 95vh;
+  background-color: rgb(41, 41, 41);
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.micContainer {
+  height: 20%;
+  width: 100%;
+}
+.numberContainer {
+  height: 20%;
+  width: 100%;
+  direction: rtl;
+  color: black;
+}
+
+.keysContainer {
+  height: 60%;
+  width: 100%;
+
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 5px;
+}
+
+.mic {
+  width: 60px;
+  height: 50px;
+  border-radius: 25px 30px 30px 0;
+  background-color: rgba(134, 135, 153, 0.3);
+  color: rgb(175, 175, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic i {
+  color: inherit;
+}
+
+.math {
+  height: 40%;
+  width: 100%;
+  color: gray;
+  display: flex;
+  align-items: flex-end;
+}
+
+.result {
+  height: 60%;
+  width: 100%;
+  font-size: 50px;
+}
+
+.key {
+  grid-column: auto / span 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
+  background-color: darkred;
+}
+
+.mainColor {
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    135deg,
+    rgba(35, 35, 35, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  box-shadow: inset 3px 3px 5px rgba(70, 70, 70, 1),
+    inset -3px -3px 5px rgba(50, 50, 50, 1);
+}
+.gray {
+  background: rgb(72, 76, 88);
+  background: linear-gradient(
+    135deg,
+    rgba(72, 76, 88, 1) 0%,
+    rgba(134, 135, 153, 1) 100%
+  );
+  box-shadow: inset 3px 3px 5px rgba(134, 135, 153, 1),
+    inset -3px -3px 5px rgba(85, 85, 85, 1);
+}
+.orange {
+  background: rgb(154, 91, 22);
+  background: linear-gradient(
+    135deg,
+    rgba(154, 91, 22, 1) 0%,
+    rgba(255, 145, 0, 1) 100%
+  );
+  box-shadow: inset 3px 3px 5px rgb(219, 127, 7),
+    inset -3px -3px 5px rgba(154, 91, 22, 1);
+}
+#zero {
+  grid-column: auto/span 4;
+}
